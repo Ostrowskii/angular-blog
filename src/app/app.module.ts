@@ -9,7 +9,10 @@ import { BigCardComponent } from './components/big-card/big-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
-
+import { ComentarioComponent } from './pages/comentario/comentario.component';
+import { InputComentarioComponent } from './components/input-comentario/input-comentario.component';
+import { ListaComentarioComponent } from './components/lista-comentario/lista-comentario.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,11 +22,15 @@ import { ContentComponent } from './pages/content/content.component';
     BigCardComponent,
     SmallCardComponent,
     HomeComponent,
+    ComentarioComponent,
+    InputComentarioComponent,
+    ListaComentarioComponent,
     ContentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

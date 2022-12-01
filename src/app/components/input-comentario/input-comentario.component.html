@@ -1,2 +1,6 @@
 <p>input-comentario works!</p>
-<input type="text" [(ngModel)]="autor">
+<input type="text" [(ngModel)]="autor" placeholder="digite seu nome"> <br>
+<input type="text" [(ngModel)]="conteudo" placeholder="digite seu comentario"> <br>
+<button (click)="enviarComentario()">
+enviar
+</button>
